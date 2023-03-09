@@ -57,6 +57,7 @@ public class TravelGuide extends JFrame {
 		lblprovince.setBounds(34, 104, 139, 50);
 		contentPane.add(lblprovince);
 		
+		
 		textProvince = new JTextField();
 		textProvince.setBounds(215, 121, 157, 23);
 		contentPane.add(textProvince);
@@ -93,11 +94,39 @@ public class TravelGuide extends JFrame {
 					}else if(province.equalsIgnoreCase("Tochigi")) {
 						sd.ShowTochigi();
 						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Gunma")) {
+						sd.ShowGunma();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Saitama")) {
+						sd.ShowSaitama();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Shiba")) {
+						sd.ShowShiba();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Tokyo")) {
+						sd.ShowTokyo();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kanagawa")) {
+						sd.ShowKanagawa();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Niigata")) {
+						sd.ShowNiigata();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Toyama")) {
+						sd.ShowToyama();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Ishikawa")) {
+						sd.ShowIshikawa();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Fukui")) {
+						sd.ShowFukui();
+						sd.setVisible(true);
 					}
 					else {
 						JOptionPane.showMessageDialog(null, "Province not found, input again!!","Error",JOptionPane.ERROR_MESSAGE);
 					}
 				}
+				dispose(); //close current Frame and go to ShowData Class
 			}
 		});
 		btnOK.setBounds(243, 251, 68, 23);

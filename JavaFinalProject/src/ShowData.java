@@ -76,6 +76,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 
@@ -135,6 +136,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -194,6 +196,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -252,6 +255,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -311,6 +315,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -369,6 +374,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -427,6 +433,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -486,6 +493,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -544,6 +552,7 @@ public class ShowData extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				TravelGuide tg = new TravelGuide();
 				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
 			}
 		});
 		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -561,5 +570,540 @@ public class ShowData extends JFrame {
 		contentPane.add(btnClose);
 	}//end of ShowTochigi()
 	
+	public void ShowGunma() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 677);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Gunma");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(185, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Kusatsu Onsen");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(210, 49, 248, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is the most famous onsen town in Gunma prefecture. It is also one of the three best onsen towns in Japan, along with Hyogo Prefecture's Arima Onsen and Gifu Prefecture's Gero Onsen. An easily visible feature of Kusatsu Onsen is the Yubatake, a large chute covered with milky white steam. "
+						+"it exports about 5,000 liters of water per minute and is ranked as the largest source of hot spring water in Japan. Another highlight is that near the yubatake, Yumomi no Odori is performed, a local performance where the performers dance along. "
+						+"and use a large piece of wood to stir and bring along (to reducing the temperature of the hot springs) There will be performances 6 times a day, the admission fee is 600 yen per person.</html>");
+		lblData.setBounds(46, 381, 566, 171);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Gunma.jpg"));
+		lblPic.setBounds(57, 88, 548, 282);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(309, 585, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(501, 585, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowGunma
 	
+	public void ShowSaitama() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 676);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Saitama");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(185, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Kawagoe’s Warehouse District");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(165, 49, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a charming and quirky neighborhood. very unique It is about 2 kilometers north of Kawagoe Station. The main road is about 700 meters long, but there are alleys between both sides of this road. "
+						+"that can walk and travel for a long time What makes this old town popular among tourists is that the whole area is full of old houses from the Edo period along both sides of the street. "
+						+"We can tell you that it's taken care of so well that it's unbelievable, like stepping into Edo. This gives the area the nickname Koedo Kawagoe or can be translated as Little Edo.</html>");
+		lblData.setBounds(46, 424, 566, 149);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Saitama.jpg"));
+		lblPic.setBounds(46, 86, 554, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(302, 584, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(501, 584, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowSaitama()
+	
+	public void ShowShiba() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 642);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Shiba");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(185, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Naritasan Shinshoji Temple");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(165, 49, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>An old temple not far from Narita Airport, built since 1977 certified by cultural heritage and It is a temple where the Japanese It is the second most popular place in the country to come and ask for blessings in the new year. "
+						+"This place is open every day. Inside the temple is shady and cool if you come in the morning. will also have the opportunity to see the monastic ceremonies.</html>");
+		lblData.setBounds(46, 424, 566, 149);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shiba.jpg"));
+		lblPic.setBounds(79, 86, 500, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(302, 557, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(501, 557, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowShiba
+	
+	public void ShowTokyo() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 728);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Tokyo");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(185, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Shibuya Crossing");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>One of Tokyo's most iconic landmarks, it has been featured in many movies and TV shows. This intersection is right in front of Shibuya Station in the bustling Shibuya district. In the corridor crossing a large road that people have to walk intersect Rhythm like the heartbeat of Tokyo More than 500,000 people walk through this intersection every day. "
+						+"They will have to wait for the signal to tell pedestrians to cross the street. cross the road from all directions until The light will change the car to continue. In rush hour, there will be more than 3,000 people crossing the road at the same time. "
+						+"Shibuya Crossing is a very popular spot for tourists to take pictures. You can fully shoot, you only need to be careful and conscious.</html>");
+		lblData.setBounds(46, 424, 566, 184);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tokyo.jpg"));
+		lblPic.setBounds(56, 86, 549, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(302, 634, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(494, 634, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowTokyo
+	
+	public void ShowKanagawa() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 711);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kanagawa");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(185, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Fujiko F. Fujio Museum");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>This museum is home to the works of the famous manga creator Fujiko F. Fujio. The owner of the work, Doraemon, is a real thing. famous The museum also exhibits works by Fujiko F. Fujio. In addition to Doraemon, such as Parman and Kutaro, here exhibits the prototype "
+						+"of the cartoon drawn with a pen, a working table with Fujiko F. Fujio's belongings, a mini-cinema, and scenes from the cartoon for tourists to enjoy. Take pictures with your favorite cartoon characters, and end up visiting the museum's souvenir shop to buy as well.</html>");
+		lblData.setBounds(56, 431, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kanagawa.jpg"));
+		lblPic.setBounds(56, 86, 549, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(302, 619, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(494, 619, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKanagawa
+	
+	public void ShowNiigata() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 692);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Niigata");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Takada Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Takada Castle at What we see today was renovated in 1991 and 2017 due to earthquakes and fires. In addition, this castle has been praised as one of Japan's 100 best castles for the highlight here is the moat. "
+						+"A beautiful castle town and red bridge. In addition, within the beautiful garden, there are many cherry blossom trees. When it enters the spring season, it will bloom so that the view The scenery of Takadayon Castle is even more beautiful.</html>");
+		lblData.setBounds(56, 431, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Niigata.jpg"));
+		lblPic.setBounds(56, 86, 549, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(302, 600, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(494, 600, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowNiigata
+	
+	public void ShowToyama() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 827, 740);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Toyama");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(279, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Ikedaya Yasubei Shoten");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(264, 54, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Ikedaya Yasubei located in the heart of the city We can see equipment, containers and shelves where various raw materials are stored. species that have been used for the production of medicines since ancient times. There are also staff who explain how to make Hankotan and show you how to do it several times a day. You can also try cutting medicine with old equipment. You can buy it on the 1st floor of the shop. "
+						+"Medicines produced by Ikedayayasu Beichen Medicine and herbal teas are available on the second floor, there is a restaurant Kenkozen Yakuto, which offers healthy food based on the concept of traditional Chinese medicine texts. who believes that \"food is a kind of medicine\", food is prepared with carefully selected ingredients. "
+						+"and prepare a balanced menu that is good for the body Healthy set meal can choose a course meal. Prices range from 2,000 yen to 3,000 yen, but be aware that reservations are required in advance for dining.</html>");
+		lblData.setBounds(49, 435, 730, 184);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Toyama.jpg"));
+		lblPic.setBounds(96, 93, 642, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(458, 639, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(650, 639, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowToyama
+	
+	public void ShowIshikawa() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Ishikawa");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Kenrokuen Garden");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a very outstanding landmark of Kanazawa City that nature lovers want to see a beautiful garden must come. because here It is known as one of the three most amazing gardens in Japan. Obsessed with the beautiful scenery in the garden that is uniquely beautiful in every season. "
+						+"The name \"Kenroku\" means The garden has six good elements: spaciousness, peaceful atmosphere, harmony, long history, water source, and spectacular surrounding scenery.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Ishikawa.jpg"));
+		lblPic.setBounds(56, 86, 549, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowIshikawa
+	
+	public void ShowFukui() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Fukui");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Heisenji Hakusan Shrine");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It has been dubbed as A place of faith for over 1,300 years, this shrine was home to over 8,000 warrior monks or sohei (僧兵). including armed with a halberd. Hakusan Heizenji Shrine It was the largest Buddhist city in Japan in the olden days. "
+						+"It is a place with an interesting history. It is a Shinto shrine dedicated to the mountain deity Hakuson. One of the highlights of Hakusan Shrine is the Stone pavement that is still intact even after 1,000 years of time already.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("New label");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Fukui.jpg"));
+		lblPic.setBounds(53, 86, 553, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowFukui
 }
