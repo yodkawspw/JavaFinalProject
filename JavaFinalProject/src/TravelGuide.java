@@ -121,6 +121,36 @@ public class TravelGuide extends JFrame {
 					}else if(province.equalsIgnoreCase("Fukui")) {
 						sd.ShowFukui();
 						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Yamanashi")) {
+						sd.ShowYamanashi();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Nagano")) {
+						sd.ShowNagano();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Gifu")) {
+						sd.ShowGifu();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Shizuoka")) {
+						sd.ShowShizuoka();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Aichi")) {
+						sd.ShowAichi();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Mie")) {
+						sd.ShowMie();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Shiga")) {
+						sd.ShowShiga();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kyoto")) {
+						sd.ShowKyoto();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Osaka")) {
+						sd.ShowOsaka();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Hyogo")) {
+						sd.ShowHyogo();
+						sd.setVisible(true);
 					}
 					else {
 						JOptionPane.showMessageDialog(null, "Province not found, input again!!","Error",JOptionPane.ERROR_MESSAGE);

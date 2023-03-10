@@ -1106,4 +1106,605 @@ public class ShowData extends JFrame {
 		btnClose.setBounds(495, 583, 111, 28);
 		contentPane.add(btnClose);
 	}//end of ShowFukui
+	
+	public void ShowYamanashi() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Yamanashi");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Chureito Pagoda");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a five-story pagoda located in Fujiyoshida City. Yamanashi Prefecture and not far from Lake Kawaguchiko. Located on a hill in the grounds of Arakura Sengen Shrine, the Chureito Pagoda was built in 1963 as a memorial. "
+						+"In depth of peace and death from the aftermath of World War II. The most beautiful point of the pagoda is the point where you have to climb up more than 400 stairs. It may be a bit tiring but the view is very beautiful.</html>");
+		lblData.setBounds(56, 418, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Yamanashi.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowYamanashi
+	
+	public void ShowNagano() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Nagano");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Hakuba Village");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Located in the northern part of the Japanese Alps, just a short distance from Nagano City. This is the home of many ski resorts where many people dream of skiing and snowboarding. Kanaska is also the source of the onsen for us to relax after going through the cold snow. "
+						+"But in addition to skiing and onsen activities This village is also a natural beauty. Each season has a different color. In summer, we can see lilies in full bloom at Hakuba Iwatake Lily Park against the green Japanese Alps in the background. Looks bright, suitable for the summer.</html>");
+		lblData.setBounds(56, 418, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Nagano.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowNagano
+	
+	public void ShowGifu() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Gifu");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Hida Takayama");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>This is a tourist city of Gifu Prefecture. Featured with Sanmachi district, the old town area full of Japanese-style buildings. Higashiyama Walking Course, "
+						+"where you will find restaurants and restaurants that have been around since the Edo Era and the Meiji Era. Cafes, confectionery shops, and various appliances. along both sides But one must-try when coming to this area is the famous Hida Beef.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Gifu.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowGifu
+	
+	public void ShowShizuoka() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Shizuoka");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Izu Peninsula");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a gathering place for famous resorts regularly. 'Shizuoka Prefecture' which consists of amazing onsen, beautiful beaches. and the scenery of the bright blue sea. The reason why this Peninsula is It is very popular with domestic tourists "
+						+"because it is not far from Tokyo. Especially many cities located on the Izu Peninsula. They are all famous for their beautiful beaches and hot springs, such as Atami City, Ito City, and Shimoda City.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.LEFT);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shizuoka.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowShizuoka
+	
+	public void ShowAichi() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Aichi");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Yotsuya No Senmaida");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Beautiful green terraced rice fields, over 400 years old, planted by farmers in the village along the foothills at a height of 220 – 420 meters above sea level. Today, more than 30 village farmers in the village continue to plant more than 420 rice fields "
+						+"(in the past, they planted up to 1296 rice fields) so that the younger generations in the area can cherish and preserve the intellectual property created by their ancestors.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Aichi.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowAichi
+	
+	public void ShowMie() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Mie");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Ise Azuchi Momoyama Culture Village");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a cultural village that reproduces a town in the Atsushimomoyama era. Atsushi Castle is the main fortress and the village area also has a shrine. Old fashioned hair salon, Ninja Museum, Maze, Haunted House "
+						+"There are also many activities including geisha performances, samurai show, and a ninja show. It's a place full of fun and laughter.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Mie.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowMie
+	
+	public void ShowShiga() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Shiga");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Lake Biwa");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 47, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is the largest lake in Japan, located about 10 kilometers to the east of Kyoto. It is also an important resource for a wide range of industries. It is also one of the oldest lakes in the world, being over four million years old. "
+						+"Lake Biwa offers a rich environment home to more than 50 species of aquatic fauna and flora, and of course, with a spectacular view of the lake's islands. Including the mountains surrounding the lake, this is a popular tourist spot for tourists.</html>");
+		lblData.setBounds(56, 424, 539, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shiga.jpg"));
+		lblPic.setBounds(56, 87, 550, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowShiga
+	
+	public void ShowKyoto() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kyoto");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Ine Fishing Village");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 47, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Ine is a preserved fishing village that remains. Only a handful of places in Japan are located north of Kyoto. The highlight of the village is the Boat House by the river, which will be a house with a boat dock in its own house. We can also rent a boat to see around the bay and "
+						+"feed the seagulls as well. If anyone wants to stay overnight here to enjoy the good atmosphere of the village, there are homestay accommodations for overnight stays with delicious meals made by fishermen.</html>");
+		lblData.setBounds(34, 424, 585, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kyoto.jpg"));
+		lblPic.setBounds(45, 87, 561, 320);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKyoto
+	
+	public void ShowOsaka() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Osaka");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Osaka Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 47, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>The symbol of Osaka and one of the three most famous castles in Japan. It took more than 16 years to complete. It was built in the second half of the 16th century as a residence for Toyotomi Hideyoshi. The highlight that can't be missed here is Nishinomaru Garden, "
+						+"where more than 600 cherry trees are planted and will bloom beautifully in April every year, makes the area around the castle look like a dream, making it another beautiful cherry blossom viewing spot in Osaka.</html>");
+		lblData.setBounds(34, 424, 585, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Osaka.jpg"));
+		lblPic.setBounds(34, 86, 585, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowOsaka
+	
+	public void ShowHyogo() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 667, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Hyogo");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(186, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Kobe Port Tower");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(174, 47, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>The tower was completed in 1963 with the design of the company. Well-known Japanese construction firm Nikken Sekkei is not only the designer of the Kobe Port Tower, but is also behind the design of the 600-meter-tall Tokyo Skytree TV tower, as well as the Barcelona Camp Nou stadium. "
+				+"Europe's biggest sport And the second largest in the world with a strange but interesting shape of the building that resembles an hourglass. And towering in the center of the city, this place is an important landmark of Kobe by default.</html>");
+		lblData.setBounds(34, 424, 607, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Hyogo.jpg"));
+		lblPic.setBounds(34, 86, 585, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(303, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(495, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowHyogo
 }
