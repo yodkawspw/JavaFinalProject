@@ -7,6 +7,9 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+import java.awt.*;
+
 import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -65,8 +68,8 @@ public class ShowData extends JFrame {
 		lblData.setBounds(22, 365, 605, 184);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("Input Picture here");
-		lblPic.setIcon(new ImageIcon(""));
+		JLabel lblPic = new JLabel("");
+		lblPic.setIcon(new ImageIcon("Input Picture here"));
 		lblPic.setBounds(38, 88, 572, 266);
 		contentPane.add(lblPic);
 		
@@ -125,8 +128,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(22, 365, 605, 184);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Hokkaido.jpeg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Hokkaido.jpeg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(22, 88, 605, 266);
 		contentPane.add(lblPic);
 		
@@ -185,8 +189,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(32, 388, 605, 122);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Aomori.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Aomori.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(32, 88, 580, 282);
 		contentPane.add(lblPic);
 		
@@ -244,8 +249,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(32, 388, 605, 123);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Iwate.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Iwate.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -304,8 +310,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(44, 381, 566, 168);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Akita.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Akita.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -363,8 +370,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 390, 566, 112);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Yamagata.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Yamagata.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -422,8 +430,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 390, 566, 112);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Fukushima.png"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Fukushima.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -482,8 +491,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 381, 566, 152);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Ibaraki.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Ibaraki.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -541,8 +551,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 381, 566, 152);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tochigi.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Tochigi.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
 		
@@ -601,8 +612,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 381, 566, 171);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Gunma.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Gunma.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 548, 282);
 		contentPane.add(lblPic);
 		
@@ -661,8 +673,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 424, 566, 149);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Saitama.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Saitama.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(46, 86, 554, 327);
 		contentPane.add(lblPic);
 		
@@ -720,8 +733,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 424, 566, 149);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shiba.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Shiba.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(79, 86, 500, 327);
 		contentPane.add(lblPic);
 		
@@ -780,8 +794,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(46, 424, 566, 184);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tokyo.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Tokyo.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(56, 86, 549, 327);
 		contentPane.add(lblPic);
 		
@@ -839,8 +854,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(56, 431, 539, 148);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kanagawa.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Kanagawa.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(56, 86, 549, 327);
 		contentPane.add(lblPic);
 		
@@ -898,8 +914,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(56, 431, 539, 148);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Niigata.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Niigata.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(56, 86, 549, 327);
 		contentPane.add(lblPic);
 		
@@ -958,9 +975,10 @@ public class ShowData extends JFrame {
 		lblData.setBounds(49, 435, 730, 184);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("Toyama.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Toyama.jpg"));
 		lblPic.setBounds(96, 93, 642, 327);
 		contentPane.add(lblPic);
 		
@@ -1018,8 +1036,9 @@ public class ShowData extends JFrame {
 		lblData.setBounds(56, 424, 539, 148);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Ishikawa.jpg"));
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Ishikawa.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(56, 86, 549, 327);
 		contentPane.add(lblPic);
 		
@@ -1077,9 +1096,10 @@ public class ShowData extends JFrame {
 		lblData.setBounds(56, 424, 539, 148);
 		contentPane.add(lblData);
 		
-		JLabel lblPic = new JLabel("New label");
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Fukui.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Fukui.jpg"));
 		lblPic.setBounds(53, 86, 553, 327);
 		contentPane.add(lblPic);
 		
@@ -1138,8 +1158,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Yamanashi.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Yamanashi.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1198,8 +1219,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Nagano.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Nagano.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1258,8 +1280,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Gifu.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Gifu.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1318,8 +1341,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Shizuoka.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.LEFT);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shizuoka.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1378,8 +1402,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Aichi.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Aichi.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1438,8 +1463,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Mie.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Mie.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1498,8 +1524,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Shiga.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shiga.jpg"));
 		lblPic.setBounds(56, 87, 550, 320);
 		contentPane.add(lblPic);
 		
@@ -1559,8 +1586,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Kyoto.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kyoto.jpg"));
 		lblPic.setBounds(45, 87, 561, 320);
 		contentPane.add(lblPic);
 		
@@ -1620,7 +1648,8 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Osaka.jpg"));
+		Image img = new ImageIcon(this.getClass().getResource("/Osaka.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(34, 86, 585, 327);
 		contentPane.add(lblPic);
 		
@@ -1680,7 +1709,8 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Hyogo.jpg"));
+		Image img = new ImageIcon(this.getClass().getResource("/Hyogo.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(34, 86, 585, 327);
 		contentPane.add(lblPic);
 		
@@ -1740,8 +1770,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Nara.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Nara.jpg"));
 		lblPic.setBounds(34, 86, 637, 327);
 		contentPane.add(lblPic);
 		
@@ -1801,8 +1832,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Wakayama.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Wakayama.jpg"));
 		lblPic.setBounds(34, 87, 655, 327);
 		contentPane.add(lblPic);
 		
@@ -1862,8 +1894,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Tottori.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tottori.jpg"));
 		lblPic.setBounds(34, 87, 655, 327);
 		contentPane.add(lblPic);
 		
@@ -1923,8 +1956,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Shimane.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shimane.jpg"));
 		lblPic.setBounds(34, 87, 655, 368);
 		contentPane.add(lblPic);
 		
@@ -1984,8 +2018,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Okayama.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Okayama.jpg"));
 		lblPic.setBounds(47, 87, 624, 365);
 		contentPane.add(lblPic);
 		
@@ -2045,8 +2080,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Hiroshima.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Hiroshima.jpg"));
 		lblPic.setBounds(47, 87, 624, 365);
 		contentPane.add(lblPic);
 		
@@ -2106,8 +2142,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Yamaguchi.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Yamaguchi.jpg"));
 		lblPic.setBounds(47, 87, 648, 365);
 		contentPane.add(lblPic);
 		
@@ -2167,8 +2204,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Tokushima.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tokushima.jpg"));
 		lblPic.setBounds(57, 87, 637, 365);
 		contentPane.add(lblPic);
 		
@@ -2228,8 +2266,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Kagawa.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kagawa.jpg"));
 		lblPic.setBounds(36, 87, 637, 365);
 		contentPane.add(lblPic);
 		
@@ -2288,8 +2327,9 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Ehime.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Ehime.jpg"));
 		lblPic.setBounds(36, 87, 637, 365);
 		contentPane.add(lblPic);
 		

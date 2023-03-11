@@ -66,6 +66,7 @@ public class TravelGuide extends JFrame {
 		final JButton btnOK = new JButton("OK");
 		btnOK.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
 				String province;
 				ShowData sd = new ShowData();
 				if(e.getSource()==btnOK) {
@@ -182,13 +183,12 @@ public class TravelGuide extends JFrame {
 						sd.ShowEhime();
 						sd.setVisible(true);
 					}
-					else {
-						JOptionPane.showMessageDialog(null, "Province not found, input again!!","Error",JOptionPane.ERROR_MESSAGE);
-					}
-				}
+				}//end of if
 				dispose(); //close current Frame and go to ShowData Class
+			}catch(Exception err) {
+				JOptionPane.showMessageDialog(null, "Province not found, input again!!","Error",JOptionPane.ERROR_MESSAGE);
 			}
-		});
+		}});
 		btnOK.setBounds(243, 251, 68, 23);
 		contentPane.add(btnOK);
 		
