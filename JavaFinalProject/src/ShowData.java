@@ -1707,4 +1707,613 @@ public class ShowData extends JFrame {
 		btnClose.setBounds(495, 583, 111, 28);
 		contentPane.add(btnClose);
 	}//end of ShowHyogo
+	
+	public void ShowNara() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Nara");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Todaiji Temple");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Todaiji Temple is the most important and oldest temple in Nara, built in the year 743. If talking about the beauty of this temple, let's start with that gate. Daimon (Nandaimon Gate) A large wooden front gate with intricate carvings. Continue with the inner viharn, which has been praised as the world's largest wooden viharn, "
+						+"standing 16 meters high. Inside is enshrined Luang Pho To (Daibutsu), a large bronze Buddha image, 15 meters high and weighing 500 tons. These Todaiji temple have been registered as a World Cultural Heritage Site by UNESCO.</html>");
+		lblData.setBounds(34, 424, 637, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Nara.jpg"));
+		lblPic.setBounds(34, 86, 637, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowNara
+	
+	public void ShowWakayama() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Wakayama");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Wakayama Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Wakayama Castle was the residence of the Kishu Tokugawa clan, one of the Tokugawa Gosanke of the Edo period. As a symbol of Wakayama Prefecture, From the castle tower, you can see a 360-degree view of Wakayama City, especially in the evening when the sun sets over the sea is very beautiful, "
+						+"suitable for those who like taking photos, don't miss the ninja hospitality at Wakayama Castle The unique ninjas provide all sorts of hospitality from taking photos, guiding, to assisting wheelchair users.</html>");
+		lblData.setBounds(34, 424, 637, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Wakayama.jpg"));
+		lblPic.setBounds(34, 87, 655, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 583, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 583, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowWakayama
+	
+	public void ShowTottori() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 703);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Tottori");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Gosho Aoyama Manga Factory");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Tottori is the birthplace of the great Detective Conan author, so the hometown has been transformed into a Conan theme. There is a museum that includes the history of this cartoon since the author is Sensei Aoyama, what he have to go through to become Conan, sending cool related items from the cartoon, the author's simulation office. "
+						+"and many other rare collectibles More importantly, they also have many fun activities to try during the visit. Including, there are many more shiny souvenirs that must be collected outside the museum, train stations, corridors, bus stops. And many things are also made out in the Conan theme as well.</html>");
+		lblData.setBounds(34, 424, 637, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tottori.jpg"));
+		lblPic.setBounds(34, 87, 655, 327);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 606, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 606, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowTottori
+	
+	public void ShowShimane() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 703);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Shimane");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Izumo Taisha Shrine");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Izumo Taisha Shrine has a legend that Japanese gods gather here in October according to the Lunar calendar. (November according to the solar calendar or international calendar) The main hall was built in 1744. It is 24 meters tall, but legend says it is larger, "
+						+"reaching 96 meters (usually the main hall is not open to visitors). Which is the place where dances are held for the gods, has the largest rope or Shimenawa rope in Japan, 13 meters long and weighs 5.2 tons.</html>");
+		lblData.setBounds(57, 466, 624, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Shimane.jpg"));
+		lblPic.setBounds(34, 87, 655, 368);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 606, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 606, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowShimane
+	
+	public void ShowOkayama() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 690);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Okayama");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Okayama Korakuen Garden");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>A beautiful Japanese garden that is beautiful in every season. Importantly, it is also ranked 1 in 3 of the most beautiful gardens in Japan. The decoration here is something that is very perfect. There is both shady under every part. "
+						+"You can also see the background of Okayama Castle. Whether it's spring or autumn leaves, you won't be disappointed if you come here.</html>");
+		lblData.setBounds(47, 467, 624, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Okayama.jpg"));
+		lblPic.setBounds(47, 87, 624, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 594, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 594, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowOkayama
+	
+	public void ShowHiroshima() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 732, 690);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Hiroshima");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(219, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Hiroshima Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(206, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>This five-story castle is surrounded by a moat where the original was built. Built for the first time in 1589 by the governor Moriteru Moto, but was damaged by the bomb, so it was restored. And open as a museum to visit the history of the "
+						+"castle and Hiroshima Prefecture every Sunday on the 2nd floor, friends can watch the Hiroshima dance (Aki Hiroshima Busho Tai) as well. Able to see a beautiful view of the city of Hiroshima in a wide angle.</html>");
+		lblData.setBounds(47, 463, 624, 120);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Hiroshima.jpg"));
+		lblPic.setBounds(47, 87, 624, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(368, 594, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(560, 594, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowHiroshima
+	
+	public void ShowYamaguchi() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 758, 720);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Yamaguchi");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(233, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Tsunoshima Bridge");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(224, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Tsunoshima Bridge that connects the village of Hohoku, Shimonoseki City and Tsunoshima Island, because apart from the bridge that stretches in a straight line before bending slightly. You will still be able to see the blue sea that blends in with the bridge. It can be said that it is a harmony between nature and man-made things. "
+						+"The beauty of this bridge can be seen from the movie. Japanese car identity There is always money to choose Tsunoshima Bridge as a filming location. We believe that there are many beautiful corners that you have to discover by yourself.</html>");
+		lblData.setBounds(57, 463, 648, 148);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.TRAILING);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Yamaguchi.jpg"));
+		lblPic.setBounds(47, 87, 648, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(392, 622, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(584, 622, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowYamaguchi
+	
+	public void ShowTokushima() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 758, 701);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Tokushima");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(233, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Senba Cliffs");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(224, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>A cliff-top observation deck of more than 200 meters. If you like looking at the sea from a high altitude, you should come here as the area has 2 km long cliffs on the Minami Awa Sunline Route. "
+						+"Chic and beautiful, we recommend coming here as a beautiful viewpoint. In the midst of the sea atmosphere, extremely romantic.</html>");
+		lblData.setBounds(57, 463, 648, 116);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Tokushima.jpg"));
+		lblPic.setBounds(57, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(392, 604, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(584, 604, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowTokushima
+	
+	public void ShowKagawa() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 680);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kagawa");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Seto Ohashi Bridge");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(201, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>The longest two-tiered bridge in the world, with a length of 13.1 kilometers across five islands, is also a cable suspension bridge. and the largest steel anchor bridge in the world as well. "
+						+"The top is a road for cars and the bottom is a rail for JR trains. “Seto Ohashi Tower” will be illuminated on Saturdays and holidays, creating a very beautiful atmosphere.</html>");
+		lblData.setBounds(53, 463, 616, 116);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Kagawa.jpg"));
+		lblPic.setBounds(36, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(373, 590, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(562, 590, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKagawa
+	
+	public void ShowEhime() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 657);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Ehime");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Botchan Train");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(201, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is an old train that has existed since the Meiji era and is now used as a tourist train that will take tourists along the city's famous attractions.</html>");
+		lblData.setBounds(46, 463, 616, 116);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setIcon(new ImageIcon("D:\\FinalProject\\Attraction\\Ehime.jpg"));
+		lblPic.setBounds(36, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(370, 563, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(562, 563, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowEhime
 }

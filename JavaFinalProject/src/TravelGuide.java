@@ -151,6 +151,36 @@ public class TravelGuide extends JFrame {
 					}else if(province.equalsIgnoreCase("Hyogo")) {
 						sd.ShowHyogo();
 						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Nara")) {
+						sd.ShowNara();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Wakayama")) {
+						sd.ShowWakayama();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Tottori")) {
+						sd.ShowTottori();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Shimane")) {
+						sd.ShowShimane();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Okayama")) {
+						sd.ShowOkayama();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Hiroshima")) {
+						sd.ShowHiroshima();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Yamaguchi")) {
+						sd.ShowYamaguchi();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Tokushima")) {
+						sd.ShowTokushima();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kagawa")) {
+						sd.ShowKagawa();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Ehime")) {
+						sd.ShowEhime();
+						sd.setVisible(true);
 					}
 					else {
 						JOptionPane.showMessageDialog(null, "Province not found, input again!!","Error",JOptionPane.ERROR_MESSAGE);
