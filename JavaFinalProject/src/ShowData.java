@@ -2356,4 +2356,562 @@ public class ShowData extends JFrame {
 		btnClose.setBounds(562, 563, 111, 28);
 		contentPane.add(btnClose);
 	}//end of ShowEhime
+	
+	public void ShowKochi() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 759, 771);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kochi");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Koji Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(201, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is one of the twelve original castles that survived the catastrophe especially the aftermath of wars that occurred during the feudal age of Japan. The castle was built in the early 17th century ( 1601-1611), but the main building was completed in 1748 after some of the structures were damaged by a fire during the Edo period. Kochi Castle was once under the lordship of Yamauchi and is now registered as an Important Cultural Properties. "
+						+"The uniqueness of Kochi Castle is its main tower, called Donjon, which was built not only to facilitate war but also to serve as a residence. too Different from other castles that usually built a noble residence separate from the castle. And the wooden furniture used for interior decoration is designed in the style of Edo art. If looking down from the top of the castle tower we can see The city's reputation has all been covered.</html>");
+		lblData.setBounds(20, 463, 710, 171);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		Image img = new ImageIcon(this.getClass().getResource("/Kochi.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setBounds(10, 87, 720, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(409, 670, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(601, 670, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKochi
+	
+	public void ShowFukuoka() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 725);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Fukuoka");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Gundam Park Fukuoka");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It is a paradise for people who love Gundam who come and enjoy until forgetting the time. It will be located inside the shopping center Mitsui Shopping Park LalaPort Fukuoka, which here is divided into 3 zones together, whether it is GUNDAM SIDE- F that is fully distributed, various models, even limited editions that are rare to shop for, "
+						+"followed by VS PARK WITH G, an area full of various bug-related activities. There is also Namco, an area full of arcades with exclusive games that are only available here. And yet there is still a great highlight, the newest 24.8 meters tall giant robot for you to take pictures with.</html>");
+		lblData.setBounds(53, 463, 616, 133);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Fukuoka.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(36, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(356, 627, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(548, 627, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowFukuoka
+	
+	public void ShowSaga() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 725);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Saga");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Niji No Matsubara Pine Grove");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>It's not just an ordinary pine forest, because the Nijino Matsubara black pine forest is ranked as one of the three largest black pine forests in Japan. It has a length of 4.5 kilometers along the coastline adjacent to Karatsu Bay. Nowadays, this black pine forest is still the lungs of Karatsu City because it is full of lush greenery that is very rich. The "
+						+"top of the huge black pine tree has branches that curve and connect to form a natural tunnel that not only provides shade but is also very beautiful. Visiting the Nijino Matsubara Black Pine Forest, We recommended to rent a car to drive, enjoy the breeze, and enjoy the view and chill out will be the best thing.</html>");
+		lblData.setBounds(36, 463, 633, 153);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Saga.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(36, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(356, 627, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(548, 627, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowSaga
+	
+	public void ShowNagasaki() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 725);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Nagasaki");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Oura Church");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Oura Church was built by a French priest in 1864 at the end of the Edo period. Used as a religious place for western merchants, this church is the most famous Catholic church in Japan. It commemorates the 26 Christians who were executed in 1597 and was also the first Christian church to be registered as a national treasure in Japan. "
+						+"top of the huge black pine tree has branches that curve and connect to form a natural tunnel that not only provides shade but is also very beautiful. Visiting the Nijino Matsubara Black Pine Forest, We recommended to rent a car to drive, enjoy the breeze, and enjoy the view and chill out will be the best thing.</html>");
+		lblData.setBounds(36, 463, 633, 153);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Nagasaki.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(36, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(356, 627, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(548, 627, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowNagasaki
+	
+	public void ShowKumamoto() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 759, 741);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kumamoto");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Shimotori Shopping Arcade");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Shimotori Shopping Arcade is known as the largest shopping district in Kumamoto Prefecture. Moreover, this shopping area can also attract local people as well as tourism to dissolve the property up to 50,000 people per day!! This Shimotori area is packed with shopping malls, boutiques, food and beverage outlets, especially if your friends are into drinking. There are also izakayas where everyone can enjoy excellent alcohol and delicious food "
+						+"(izakaya, Japanese-style bars that usually serve alcohol and food eaten with alcoholic drinks. It is popular among working people who want to hang out and relax. The atmosphere of the restaurant is similar to a British pub or Irish pub) and if you are lucky, you will also see a great performance by many great musicians and bands.</html>");
+		lblData.setBounds(46, 463, 668, 171);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Kumamoto.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(46, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(402, 645, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(594, 645, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKumamoto
+	
+	public void ShowOita() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 759, 706);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Oita");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Mameda-machi, Hita City");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>The history of this area dates back to the Edo period around 1616. It is still preserved here, earning the nickname of one of Kyushu's Little Kyotos. The two main streets running from north to south are "
+						+"Kamimachi Street and Miyuki Street, both sides of which are surrounded by old buildings and shops lined with traditional architecture.</html>");
+		lblData.setBounds(46, 471, 668, 105);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Oita.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(46, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(402, 605, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(594, 605, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowOita
+	
+	public void ShowMiyazaki() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 759, 735);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Miyazaki");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Takachiho");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>The water flowing through the towering rock walls of Takachiho Gorge was created purely by nature rather than from the sharply cooled lava ash in the river. The eruption of Mt. Aso a long time ago will come just to take a walk and enjoy the view. But it would be good to recommend renting a rowing boat to see the splendor of the rock "
+						+"cliff from the stream below. You will also be able to see the Manai Falls, one of the famous waterfalls in Japan that is 17 meters high up close. Boat rental service hours 8:30-17:00 Rental fee for 1 boat 30 minutes 2,000 yen.</html>");
+		lblData.setBounds(46, 471, 668, 114);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/Miyazaki.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPic.setBounds(46, 87, 637, 365);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(402, 631, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(594, 631, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowMiyazaki
+	
+	public void ShowKagoshima() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 778, 735);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Kagoshima");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Yakushima Island");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Yakushima Island or what many people may be familiar with as Yaku Island. Let me tell you that anyone who wants to immerse themselves in nature, we highly recommend this place because it has been registered by UNESCO as a natural world heritage site. Therefore, "
+						+"the matter of the abundance of forests and forests is definitely gone. The highlight of the island is the Cryptomeria tree, which is a thousand years old tree, especially the Jomonsugi tree, which is over 3,000 years old. You shouldn't miss this one.</html>");
+		lblData.setBounds(33, 474, 704, 114);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		Image img = new ImageIcon(this.getClass().getResource("/Kagoshima.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setBounds(51, 87, 659, 369);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(414, 631, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(606, 631, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowKagoshima
+	
+	public void ShowOkinawa() {
+		setTitle("Travel Guide");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 778, 735);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblHeader = new JLabel("You want to go to Okinawa");
+		lblHeader.setHorizontalAlignment(SwingConstants.CENTER);
+		lblHeader.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblHeader.setBounds(212, 22, 299, 28);
+		contentPane.add(lblHeader);
+		
+		JLabel lblSuggest = new JLabel("We suggested : Shuri Castle");
+		lblSuggest.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSuggest.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSuggest.setBounds(199, 48, 326, 28);
+		contentPane.add(lblSuggest);
+		
+		JLabel lblData = new JLabel();
+		lblData.setHorizontalAlignment(SwingConstants.CENTER);
+		lblData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblData.setVerticalAlignment(SwingConstants.TOP);
+		lblData.setText("<html>Okinawa is home to 9 UNESCO World Heritage Sites, one of which you should not miss visiting is Shuri Castle. Built around the end of the 14th century, the bright red castle was a prominent symbol and center of politics, foreign affairs, and culture during the Ryukyu Kingdom era. "
+						+"That castle was destroyed during the Battle of Okinawa until only the walls remained. After that, the main building was built. and a new Shuremon Gate with a mix of Japanese and Chinese architectural styles.</html>");
+		lblData.setBounds(33, 474, 704, 114);
+		contentPane.add(lblData);
+		
+		JLabel lblPic = new JLabel("");
+		lblPic.setHorizontalAlignment(SwingConstants.CENTER);
+		Image img = new ImageIcon(this.getClass().getResource("/Okinawa.jpg")).getImage();
+		lblPic.setIcon(new ImageIcon(img));
+		lblPic.setBounds(51, 87, 659, 369);
+		contentPane.add(lblPic);
+		
+		JButton btnReturnMenu = new JButton("Return to Main Menu");
+		btnReturnMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				TravelGuide tg = new TravelGuide();
+				tg.setVisible(true);
+				dispose(); //close current frame after return to TravelGuide class
+			}
+		});
+		btnReturnMenu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnReturnMenu.setBounds(414, 631, 182, 28);
+		contentPane.add(btnReturnMenu);
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(606, 631, 111, 28);
+		contentPane.add(btnClose);
+	}//end of ShowOkinawa
 }

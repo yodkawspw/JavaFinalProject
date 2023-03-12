@@ -182,6 +182,33 @@ public class TravelGuide extends JFrame {
 					}else if(province.equalsIgnoreCase("Ehime")) {
 						sd.ShowEhime();
 						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kochi")) {
+						sd.ShowKochi();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Fukuoka")) {
+						sd.ShowFukuoka();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Saga")) {
+						sd.ShowSaga();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Nagasaki")) {
+						sd.ShowNagasaki();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kumamoto")) {
+						sd.ShowKumamoto();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Oita")) {
+						sd.ShowOita();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Miyazaki")) {
+						sd.ShowMiyazaki();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Kagoshima")) {
+						sd.ShowKagoshima();
+						sd.setVisible(true);
+					}else if(province.equalsIgnoreCase("Okinawa")) {
+						sd.ShowOkinawa();
+						sd.setVisible(true);
 					}
 				}//end of if
 				dispose(); //close current Frame and go to ShowData Class
