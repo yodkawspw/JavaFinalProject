@@ -431,7 +431,7 @@ public class ShowData extends JFrame {
 		contentPane.add(lblData);
 		
 		JLabel lblPic = new JLabel("");
-		Image img = new ImageIcon(this.getClass().getResource("/Fukushima.jpg")).getImage();
+		Image img = new ImageIcon(this.getClass().getResource("/Fukushima.png")).getImage();
 		lblPic.setIcon(new ImageIcon(img));
 		lblPic.setBounds(57, 88, 535, 282);
 		contentPane.add(lblPic);
